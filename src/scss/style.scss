@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+form-group {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 10px;
+  width: 200px;
+  height: 10px;
+  border-radius: 0px;
+}
+
+navbar {
+  position: absolute;
+}
+
+button {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.btn-modal {
+  background-color: #74A57F;
+  border: solid #74A57F 2px;
+}
+
+.btn-modal:hover {
+  background-color: #ACBDBA;
+  border: solid #ACBDBA 2px;
+}
+
+.navbar-inverse {
+  background-color: #353535;
+  border: solid #777777 4px;
+  border-radius: 0px;
+}
+
+#txt:hover{
+  color: #9d9d9d;
+}
+
+#message:hover{
+  color: #9d9d9d;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 91vh;
+  margin: 0 auto;
+  margin-top: -41px;
+}
+
+#message {
+  margin-right: -26px;
+}
+
+.pac-container {
+  z-index: 1051 !important;
+}
+
+.modal-content {
+  background-color: rgba(238,238,238,0.92);
+  -webkit-box-shadow: -1px 4px 142px 12px rgba(85,85,85,0.88);
+  -moz-box-shadow: -1px 4px 142px 12px rgba(85,85,85,0.88);
+  box-shadow: -1px 4px 142px 12px rgba(85,85,85,0.88);
+}
+
+.info {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  // font-size: px;
+  color: black;
+  background-color: rgba(230,230,230,0.8);
+  border-radius: 5px;
+  border: 2px 0.2 rgb(162,156,155);
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 150px;
+}
+
+
+
+// @keyframes example {
+//     33%   {border-radius: 10px;}
+//     66%  {border-radius: 100px;}
+//     99%  {border-radius: 10px;}
+// }
+//
+// img[src="/images/Glow8.png"]{
+//        border-radius:10px;
+//        border:1px solid rgba(180,148,19,0.75) !important;
+//        animation-name: example;
+// animation-duration: 5s;
+// animation-iteration-count: infinite;
+//      }
+
+// .loading {
+//   position: absolute;
+//   z-index: 99;
+//   width: 300px;
+//   height: 300px;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%,-50%);
+//   background: blue;
+//   display: none;
+// }
