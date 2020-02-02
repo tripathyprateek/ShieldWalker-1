@@ -4,16 +4,48 @@
     <meta charset="utf-8">
     <title>ShieldWalker</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQu_m-VeJSJZQVnQ4wwG2ST4msjxzj6sA&libraries=places" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/js/app.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/scss/style.scss">
     <link rel="icon" href="/images/zzz.ico">
 
   </head>
+  <style>
+    .fab-container {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 999;
+      cursor: pointer;
+    }
+
+    .fab-icon-holder {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background: #55ACEE;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .fab-icon-holder:hover {
+      opacity: 0.75;
+    }
+
+    .fab-icon-holder i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 30px;
+      color: white;
+    }
+
+  </style>
   <body>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -70,20 +102,14 @@
     </div>
     <div id="map-canvas">
     </div>
-    <!-- <div class="loading">
-      <h3>Loading Data...</h3>
-    </div> -->
-    <!-- <div id="directionsPanel" style="float:right;width:30%;height 100%"></div> -->
+    <div class="fab-container">
+      <a href="https://ctt.ac/masb9" style="text-decoration: none;">
+        <div class="fab-icon-holder">
+          <i class="fa fa-twitter"></i>
+        </div>
+      </a>
+    </div>
+
   </body>
 </html>
 
-<!-- <div id="mode-selector" class="controls">
-  <input type="radio" name="type" id="changemode-walking" checked="checked">
-  <label for="changemode-walking">Walking</label>
-
-  <input type="radio" name="type" id="changemode-transit">
-  <label for="changemode-transit">Transit</label>
-
-  <input type="radio" name="type" id="changemode-driving">
-  <label for="changemode-driving">Driving</label>
-</div> -->
